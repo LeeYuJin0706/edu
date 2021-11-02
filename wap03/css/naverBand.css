@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --green-color:#21c531;
+    --background-color:#f6f8fa;
+    --border-color:#ebebeb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+img{
+    display: block;
+}
+
+body{
+    font-family: 'Roboto';
+    background-color: var(--background-color);
+    color:black;
+}
+
+header .headerInner{
+    width: 80%;
+    height: 68px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .headerInner .logo{
+    background: url(/img/naver_band/spr_intro.png) no-repeat 0 -98px;
+	width: 78px;
+	height: 29px;
+    margin-left: 16px;
+}
+
+header .headerInner .logo .hide{
+    clip:rect(1px,1px,1px,1px);
+    position: absolute;
+}
+
+header .headerInner .right{
+    height: 15px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+header .headerInner .right .lang{
+    padding-right: 35px;
+    position: relative;
+}
+
+.lang::after{
+    position: absolute;
+    top:5px;
+    right: 25px;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid #777;
+    content:'';
+}
+
+header .headerInner .right .langMenu{
+    position: absolute;
+    overflow: hidden;
+    width: 0px;
+}
+
+header .headerInner .right .singUp{
+    padding-right: 35px;
+}
+
+header .headerInner .right .login{
+    display: inline-block;
+    background-color:var(--green-color);
+    padding: 15px 23px 15px 23px;
+    text-align: center;
+    line-height: 5px;
+    color:white;
+    border-radius: 2px;
+    font-weight: 800;
+}
+
+header .headerInner .right .login:hover{
+    text-decoration: none;
+    box-shadow: 0 2px 8px 0 rgb(33 197 49 / 54%);
+}
+
+header .headerInner .right a:hover{
+    text-decoration: underline;
+}
+
+#container{
+    width: 100%;
+}
+
+#container .containerInner{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 76px;
+}
+
+#container .containerInner .imgSection img{
+    width: 540px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+#container .containerInner .loginSection{
+    width: 100%;
+    margin: 20px 45px;
+    box-sizing: border-box;
+}
+
+#container .containerInner .loginSection h2{
+    font-size: 47px;
+    font-weight: 500;
+    margin-top: 29px;
+    margin-bottom: 13px;
+}
+
+#container .containerInner .singUpForm .inputBox{
+    width: 400px;
+    margin-top: 20px;
+}
+
+#container .containerInner .inputBox .inputInner input{
+    width: 350px;
+    border: none;
+    height: 45px;
+    padding: 10px 20px;
+    margin-bottom: 1px;
+    box-sizing: border-box;
+}
+
+.inputBox .inputInner input::placeholder{
+    color: rgb(175, 175, 175);
+}
+
+.buttonBox{
+    width: 350px;
+    height: 55px;
+    background-color: var(--green-color);
+    text-align: center;
+    line-height: 56px;
+    border-radius: 2px;
+    margin-top: 20px;
+}
+
+.buttonBox a{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.buttonBox:hover{
+    box-shadow: 0 2px 8px 0 rgb(33 197 49 / 54%);
+}
+
+.snsBox{
+    width: 350px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.snsBox a{
+    width: 170px;
+    text-align: center;
+    line-height: 40px;
+    background-color: white;
+    border: 1px solid;
+    border-color: var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size: 13px;
+}
+
+.snsBox a span:last-child{
+    flex: 1 0;
+}
+
+.snsBox .icon{
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.facebook .icon{
+    background: url(/img/naver_band/spr_intro.png) no-repeat -212px -100px;;
+    width: 17px;
+    height: 18px;
+}
+
+.naver .icon{
+    background: url(/img/naver_band/spr_intro.png) no-repeat -186px -100px;
+    width: 19px;
+    height: 18px;
+}
+
+.loginText{
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.loginText a{
+    color:var(--green-color);
+    text-decoration: underline;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.imgContent{
+    background-image: url(/img/naver_band/bg_intro.jpg);
+    background-position: center;
+    height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    flex-direction: column;
+    text-align: center;   
+}
+
+.imgContent h3{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.imgContent p{
+    margin-top: 35px;
+    line-height: 27px;
+}
+
+.seoList{
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.seoList .seoItem img{
+    width: 300px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.seoList .seoItem strong{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.seoList .seoItem p{
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 23px;
+}
