@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+}
+
+.kakao{
+    display: none;
+}
+
+header{
+    width: 100%;
+    background-color: black;
+}
+
+.header-inner{
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.header-inner .logo{
+    display: inline-block;
+    height: 100px;
+}
+
+.header-inner .nav{
+    width: 70%;
+    height: 100px;
+    display: inline-block;
+    position: relative;
+}
+
+.header-inner .nav li{
+    float: left;
+    width: 100px;
+    text-align: center;
+    margin-top: 38px;
+}
+
+.header-inner .nav li a{
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+}
+
+.header-inner .nav-icon{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
