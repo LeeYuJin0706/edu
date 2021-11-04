@@ -25,32 +25,22 @@ header{
 }
 
 .header-inner{
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
     margin: 0 auto;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-
-.header-inner .logo{
-    display: inline-block;
-    height: 100px;
 }
 
 .header-inner .nav{
-    width: 70%;
-    height: 100px;
-    display: inline-block;
-    position: relative;
-}
-
-.header-inner .nav li{
-    float: left;
-    width: 100px;
-    text-align: center;
-    margin-top: 38px;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 170px;
 }
 
 .header-inner .nav li a{
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     font-weight: 600;
 }
@@ -58,5 +48,6 @@ header{
 .header-inner .nav-icon{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 150px;
 }
