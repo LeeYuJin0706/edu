@@ -128,3 +128,9 @@ header{
     position: absolute;
     bottom: 0;
 }
+
+#middle{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+}
