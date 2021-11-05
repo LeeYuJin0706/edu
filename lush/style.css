@@ -32,10 +32,11 @@ header{
 }
 
 .header-inner .logo{
-    background-image: url(/img/logo.png);
+    background-image: url(img/logo.png);
     width: 82px;
     height: 100px;
     position: relative;
+    cursor: pointer;
 }
 
 .header-inner .logo span{
@@ -101,7 +102,7 @@ header{
     clip: rect(1px, 1px, 1px, 1px);
     position: absolute;
     top: 50%;
-    left: 5;
+    transform: translateY(-50%);
 }
 
 .main-left .type{
@@ -138,7 +139,7 @@ header{
 }
 
 .pager-icon div{
-    background-image: url(/img/main_dot_on.png);
+    background-image: url(img/main_dot_on.png);
     background-repeat: no-repeat;
     width: 12px;
     height: 12px;
@@ -160,10 +161,70 @@ header{
 }
 
 .middle_inner{
+    width: 1400px;
     margin: 0 auto;
     display: flex;
 }
 
 .rigth_bottom{
     display: flex;
+}
+
+#bottom{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.bottom_inner{
+    width: 750px;
+    height: 490px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bottom_inner a img{
+    position: absolute;
+    left: 65%;
+}
+
+.bottom_contents{
+    width: 316px;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+}
+
+.bottom_contents h3{
+    line-height: 43px;
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.bottom_contents p{
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color:#666;
+}
+
+footer{
+    width: 100%;
+    background-color: #030303;
+}
+
+.footer_inner .top_icons{
+    background-color: #f2f2f2;
+}
+
+.footer_inner .top_icons img{
+    width: 1236px;
+    margin: 0 auto;
+    padding: 15px 0px;
+}
+
+.footer_contents{
+    color:white;
 }
