@@ -58,7 +58,7 @@ header{
 }
 
 .main-banner-image{
-    background-image: url(/lush/img/main_banner.jpg);
+    background-image: url(/img/main_banner.jpg);
     height: 100%;
     background-position: center;
     cursor: pointer;
@@ -113,7 +113,7 @@ header{
 }
 
 .pager-icon div{
-    background-image: url(/lush/img/main_dot_on.png);
+    background-image: url(/img/main_dot_on.png);
     background-repeat: no-repeat;
     width: 12px;
     height: 12px;
@@ -131,6 +131,14 @@ header{
 
 #middle{
     width: 100%;
-    display: flex;
     margin-top: 50px;
+}
+
+.middle_inner{
+    margin: 0 auto;
+    display: flex;
+}
+
+.rigth_bottom{
+    display: flex;
 }
