@@ -31,6 +31,20 @@ header{
     margin: 0 auto;
 }
 
+.header-inner .logo{
+    background-image: url(/img/logo.png);
+    width: 82px;
+    height: 100px;
+    position: relative;
+}
+
+.header-inner .logo span{
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .header-inner .nav{
     width: 45%;
     display: flex;
@@ -58,7 +72,7 @@ header{
 }
 
 .main-banner-image{
-    background-image: url(/img/main_banner.jpg);
+    background-image: url(img/main_banner.jpg);
     height: 100%;
     background-position: center;
     cursor: pointer;
@@ -77,6 +91,17 @@ header{
 
 .main-inner .main-left{
     margin-top: 80px
+}
+
+.main-inner .main-left h2{
+    position: relative;
+}
+
+.main-inner .main-left h2 span{
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute;
+    top: 50%;
+    left: 5;
 }
 
 .main-left .type{
