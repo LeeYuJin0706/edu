@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*var number = prompt("나이를 입력하세요", "숫자로만");
+        var kg = prompt("몸무게를 입력하세요", "숫자로만");
+
+        function all(number,kg){
+            var ok = number * kg;
+            return number * kg;
+
+        }
+        let multi = all(number,kg);
+        
+        alert(multi);*/
+
+        function multiply(a,b = 5){
+            return a * b;
+        }
+
+        let number1 = parseInt(prompt("첫번째 숫자"));
+        let number2 = parseInt(prompt("두번째 숫자"));
+
+        let multi = multiply(number1,number2);
+
+        alert(multi);
+        
+    </script>
+</body>
+</html>
