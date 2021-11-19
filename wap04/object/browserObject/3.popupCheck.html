@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>시험점수 평가</title>
+    <title>Document</title>
 </head>
 <body>
     <script>
-        let score = new Date(prompt("점수를 입력해주세요"));
-        
-
+        let popupCheck = window.open('2.popup.html','','width = 400, height = 400');
+        if(popupCheck == null){
+            alert("팝업이 차단되어 있습니다. 설정을 바꿔주세요");
+        }
     </script>
 </body>
 </html>
