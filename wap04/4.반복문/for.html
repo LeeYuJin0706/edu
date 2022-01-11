@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단(for반복문)</title>
+    <style>
+
+        .container{
+            width: 960px;
+            margin: 0 auto;
+        }
+
+
+        .inner{
+            float: left;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    반복에 제한있을때 사용하면 좋음
+
+    <script>
+
+        document.write("<div class = 'container'>")
+
+        for(var j = 2; j <= 9; j++){
+            document.write("<div class = inner>");
+            for(var k = 1; k <= 9; k++){
+                document.write(j + "x" + k + "=" + j*k + "<br>");
+            }
+            document.write("</div>");
+        }
+
+        for(var j = 12; j <= 19; j++){
+            document.write("<div class = 'inner'>");
+            for(var k = 1; k <= 9; k++){
+                document.write(j + "x" + k + "=" + j*k + "<br>");
+            }
+            document.write("</div>");
+        }
+
+        document.write("</div>")
+
+
+    </script>
+</body>
+</html>

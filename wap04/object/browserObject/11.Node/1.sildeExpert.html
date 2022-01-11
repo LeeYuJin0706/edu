@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .slider-conteiner{
+            width: 300px;
+            height: 150px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        
+        .slider-box{
+            width: 1800px;
+        }
+
+        .slide{
+            float: left;
+            width: 300px;
+            height: 150px;
+        }
+
+        .slider-box>li:nth-child(1){
+            background-color: bisque;
+        }
+
+        .slider-box>li:nth-child(2){
+            background-color:burlywood;
+        }
+
+        .slider-box>li:nth-child(3){
+            background-color:wheat;
+        }
+
+        .slider-box>li:nth-child(4){
+            background-color:tan;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="slider-conteiner">
+            <ul class="slider-box">
+                <li class="slide">1</li>
+                <li class="slide">2</li>
+                <li class="slide">3</li>
+                <li class="slide">4</li>
+            </ul>
+        </div>
+    </div>
+    <button onclick="slideToLeft()">왼쪽</button>
+    <button onclick="slideToRight()">오른쪽</button>
+
+
+    <script>
+        let index = 1;
+        let moveCheck = true;
+        const sliderBox = document.querySelector('.slider-box');
+        const slideContents = document.querySelectorAll('.slide');
+        const sliderLength = slideContents.length;
+
+        let copyFirst = sliderBox.firstElementChild.cloneNode(true);
+        let copyLast = sliderBox.lastElementChild.cloneNode(true);
+
+        sliderBox.appendChild(copyFirst);
+        sliderBox.insertBefore(copyLast, sliderBox.firstElementChild);
+
+        sliderBox.style.width = 300 * (sliderLength + 2) + "px";
+        sliderBox.style.transform = "translateX(-" + 300 * index + "px)";
+
+        function slideToLeft(){
+            if(moveCheck){
+                moveCheck = false;
+
+                if(index >= 0){
+                    index --;
+                    moveSlide(1000);
+                }
+
+                setTimeout(function(){;
+                if(index === 0){
+                    index = 4;
+                    moveSlide(0);
+                }
+                moveCheck = true;  
+                },1000);       
+            }
+        }
+
+        
+        function slideToRight(){
+            if(moveCheck){
+                moveCheck = false;
+
+                if(index >= 0){
+                    index --;
+                    moveSlide(1000);
+                }
+
+                setTimeout(function(){;
+                if(index === 0){
+                    index = 5;
+                    moveSlide(0);
+                }
+                moveCheck = true; 
+                },1000);       
+            }
+        }
+
+        function moveSlide(time){
+            sliderBox.style.transition = time + 'ms';
+            sliderBox.style.transform = "translateX(-" + 300 * index + "px)";
+
+        }
+    </script>
+</body>
+</html>

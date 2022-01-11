@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+        }
+
+        li{
+            padding: 10px;
+            list-style: none;
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: wheat;
+            margin-left: 65px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li onclick="changeColor('green')">그린</li>
+        <li onclick="changeColor('blue')">블루</li>
+        <li onclick="changeColor('red')">레드</li>
+    </ul>
+    <div class="color"></div>
+    <script>
+        function changeColor(color){
+            document.querySelector('.color').style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
