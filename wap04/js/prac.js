@@ -1,4 +1,5 @@
 var heading = document.querySelector(".heading");
+
 window.onkeydown = function(){
     heading.style.fontSize = "100px";
 }

@@ -12,10 +12,14 @@
 
     <script>
         var bloodtype = document.querySelector(".bloodtype");
-        var input = prompt("혈액형을 입력하세요","대문자로 입력하세요");
-        bloodtype.innerHTML = input;
 
-        console.log(input);
+        alert("어서오세요 반갑습니다");
+        var inputText = prompt("당신의 혈액형은 무엇입니까?", "대문자로 입력하세요");
+        bloodtype.innerHTML = inputText;
+        
+        alert(bloodtype);
+        // bloodtype.innerHTML = inputText;
+
 
     </script>
 </body>

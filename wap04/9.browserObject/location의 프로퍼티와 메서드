@@ -1,0 +1,14 @@
+
+    location.hash       : #(해쉬)부분의 정보
+    location.host       : 호스트의 이름과 포트 번호
+    location.hostname   : 호스트 이름
+    location.href       : 전체 URL의 값
+    location.pathname   : URL의 경로 지정
+    location.port       : URL의 포트 번호
+    location.protocol   : URL의 프로토콜 저장
+    location.search     : url의 '?' 뒷부분 내용
+    
+    location.reload()   : like 새로고침
+    location.replace()  : 현재문서의 URL 삭제하고 다른 URL 호출 (뒤로가기 x)
+    location.toString() : href를 문자열로 받아온다
+    location.assign()   : 현재문서에 새 주소 할당 (뒤로가기 o)
