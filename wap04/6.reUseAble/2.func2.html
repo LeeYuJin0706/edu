@@ -4,35 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>익명함수</title>
+    <title>Document</title>
 </head>
 <body>
     <script>
 
-        let multi = function(a,b = 5){
-            return a * b;
-        };
-
-        ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-
-        alert(multi);
-
         let multi = function(){
             alert("곱하기!");
         };
-
+        
         multi();
 
-        ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
 
-        (function(){
-            alert("즉시실행 함수")
-        })
-
-        ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
-
-        const hello = () => { alert ("안녕")};
+        const hello = () => alert("안녕");
         hello();
+
+
 
     </script>
 </body>
